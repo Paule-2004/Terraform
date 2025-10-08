@@ -19,6 +19,6 @@ resource "docker_container" "nginx_container" {
   name  = "nginx_server"
   ports {
     internal = 80
-    external = 8000
+    external = var.external_port
   }
 }
